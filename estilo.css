@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+nav{
+    display: flex;
+    background-color: rgb(73, 183, 202)9;
+    
+}
+
+main{
+    background-color: rgb(107, 177, 218);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+h1{    
+    color:rgb(114, 115, 201);
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+
+}
+
+footer{
+    background-color: rgb(92, 44, 138);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+li{
+    display:inline-block;
+    width: 19%;
+    text-align: center;
+    transform: all 2s;
+
+}
+
+li:hover{
+    transform: scale(1.2,1.2);
+
+}
+
+
+form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+#zonas{
+    display:grid;
+
+}
+
+
+@media only screen and (max-width: 600px){
+    #zonas{
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns:50% 50%;
+        grid-template-areas:    "ZONA NORTE"
+                                "ZONA OESTE"
+                                "ZONA SUR"
+                                "CABA";}
+
+}
+
+#navegacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
